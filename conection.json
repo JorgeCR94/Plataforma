@@ -1,0 +1,13 @@
+{
+	"conectToServer":[
+		{"host":"127.0.0.1"},
+		{"user":"jorge"},
+		{"pass":"jorge123A"},
+	    {
+	    	"db":[
+				{"con":"control"}
+	    	]
+		},
+		{"charset":"utf8"}
+	]
+}
