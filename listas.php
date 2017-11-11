@@ -12,6 +12,7 @@ if (empty($_SESSION["Cuenta"])){
     header('location:index.html');
 }
 
+
 ?>
 
 <html lang="en">
@@ -151,7 +152,7 @@ if (empty($_SESSION["Cuenta"])){
                     <div class="tab-content">
                         <div class="tab-pane active" id="tab_1_1">
                             <div class="scroller" style="height: 339px;" data-always-visible="1" data-rail-visible="0">
-                                <ul class="feeds">
+                                <ul class="feeds" id="feeed1">
 
                                 </ul>
                             </div>
@@ -169,12 +170,12 @@ if (empty($_SESSION["Cuenta"])){
                                                         </div>
                                                     </div>
                                                     <div class="cont-col2">
-                                                        <div class="desc"> New user registered </div>
+                                                        <div class="desc"> Nuevo usurio registrdo </div>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col2">
-                                                <div class="date"> Just now </div>
+                                                <div class="date"> Justo ahora </div>
                                             </div>
                                         </a>
                                     </li>
@@ -333,7 +334,7 @@ if (empty($_SESSION["Cuenta"])){
         var fin = $('#to').val();
         $.ajax({
             url: 'addlist.php',
-            data: {name:nombre, description: description, start: inicio, end: fin},
+            data: {id: 0, name:nombre, description: description, start: inicio, end: fin},
             type: 'POST',
             dataType: 'json',
             success: function (data) {
@@ -347,6 +348,42 @@ if (empty($_SESSION["Cuenta"])){
                 },function(){
                     location.reload();
                 })
+            },
+            error: function (data) {
+                console.log(data);
+            }
+        });
+    });
+    $( document ).ready(function() {
+        $.ajax({
+            url: 'addlist.php',
+            data: {id:1},
+            type: 'POST',
+            dataType: 'json',
+            success: function (data) {
+                for (var i = 0; i<data.length; i++){
+                    console.log(data[i]);
+                    $('#feeed1').append('<li>\n' +
+                        '                                        <a href="javascript:;">' +
+                        '                                            <div class="col1" style="width: 90%">' +
+                        '                                                <div class="cont">' +
+                        '                                                    <div class="cont-col1">' +
+                        '                                                        <div class="label label-sm label-success">' +
+                        '                                                            <i class="fa fa-bullhorn"></i>' +
+                        '                                                        </div>' +
+                        '                                                    </div>' +
+                        '                                                    <div class="cont-col2">' +
+                        '                                                        <div class="desc"> '+data[i]["nombre"]+' <span class="label label-sm label-info">'+data[i]["descripcion"]+
+                        '                                                                            </span></div>' +
+                        '                                                    </div>' +
+                        '                                                </div>' +
+                        '                                            </div>' +
+                        '                                            <div class="col2" style="width: 90px">' +
+                        '                                                <div class="date"> '+data[i]["fechai"]+' </div>' +
+                        '                                            </div>' +
+                        '                                        </a>' +
+                        '                                    </li>');
+                }
             },
             error: function (data) {
                 console.log(data);
