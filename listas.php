@@ -57,6 +57,7 @@ if (empty($_SESSION["Cuenta"])){
     <link href="assets/global/plugins/morris/morris.css" rel="stylesheet" type="text/css" />
     <link href="assets/global/css/components-md.min.css" rel="stylesheet" id="style_components" type="text/css" />
     <link href="assets/global/css/plugins-md.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/global/plugins/bootstrap-sweetalert/sweetalert.css" rel="stylesheet" type="text/css" />
     <style>
         #view-source {
             position: fixed;
@@ -304,6 +305,7 @@ if (empty($_SESSION["Cuenta"])){
 <script src="assets/global/plugins/bootstrap-daterangepicker/daterangepicker.min.js" type="text/javascript"></script>
 <script src="assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js" type="text/javascript"></script>
 <script src="assets/global/plugins/bootstrap-timepicker/js/bootstrap-timepicker.min.js" type="text/javascript"></script>
+<script src="assets/global/plugins/bootstrap-sweetalert/sweetalert.min.js" type="text/javascript"></script>
 <script src="assets/global/plugins/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js" type="text/javascript"></script>
 <!-- END PAGE LEVEL PLUGINS -->
 <!-- BEGIN THEME GLOBAL SCRIPTS -->
@@ -336,7 +338,7 @@ if (empty($_SESSION["Cuenta"])){
             dataType: 'json',
             success: function (data) {
                 console.log(data);
-               /*$("#modalList").modal('hide');
+               $("#modalList").modal('hide');
                 swal({
                     title: "Correcto",
                     text: "Se agrego una lista correctamente",
@@ -344,7 +346,7 @@ if (empty($_SESSION["Cuenta"])){
                     showConfirmButton: true
                 },function(){
                     location.reload();
-                })*/
+                })
             },
             error: function (data) {
                 console.log(data);
