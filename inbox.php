@@ -53,6 +53,19 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.cyan-light_blue.min.css">
+    <link href="assets/global/plugins/bootstrap-daterangepicker/daterangepicker.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/global/plugins/bootstrap-timepicker/css/bootstrap-timepicker.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/global/plugins/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/global/plugins/morris/morris.css" rel="stylesheet" type="text/css" />
+    <link href="assets/global/css/components-md.min.css" rel="stylesheet" id="style_components" type="text/css" />
+    <link href="assets/global/css/plugins-md.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/global/plugins/bootstrap-sweetalert/sweetalert.css" rel="stylesheet" type="text/css" />
+    <link href="assets/apps/css/inbox.min.css" rel="stylesheet" type="text/css" />
+
     <link rel="stylesheet" href="styles.css">
     <style>
         #view-source {
@@ -124,9 +137,104 @@
         </nav>
     </div>
     <main class="mdl-layout__content mdl-color--grey-100">
-
-
-        
+        <div class="inbox">
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="inbox-sidebar">
+                        <a href="javascript:;" data-title="Compose" class="btn red compose-btn btn-block">
+                            <i class="fa fa-edit"></i> Compose </a>
+                        <ul class="inbox-nav">
+                            <li class="active">
+                                <a href="javascript:;" data-type="inbox" data-title="Inbox"> Inbox
+                                    <span class="badge badge-success">3</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" data-type="important" data-title="Inbox"> Important </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" data-type="sent" data-title="Sent"> Sent </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" data-type="draft" data-title="Draft"> Draft
+                                    <span class="badge badge-danger">8</span>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="javascript:;" class="sbold uppercase" data-title="Trash"> Trash
+                                    <span class="badge badge-info">23</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" data-type="inbox" data-title="Promotions"> Promotions
+                                    <span class="badge badge-warning">2</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" data-type="inbox" data-title="News"> News </a>
+                            </li>
+                        </ul>
+                        <ul class="inbox-contacts">
+                            <li class="divider margin-bottom-30"></li>
+                            <li>
+                                <a href="javascript:;">
+                                    <img class="contact-pic" src="assets/pages/media/users/avatar4.jpg">
+                                    <span class="contact-name">Adam Stone</span>
+                                    <span class="contact-status bg-green"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <img class="contact-pic" src="assets/pages/media/users/avatar2.jpg">
+                                    <span class="contact-name">Lisa Wong</span>
+                                    <span class="contact-status bg-red"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <img class="contact-pic" src="assets/pages/media/users/avatar5.jpg">
+                                    <span class="contact-name">Nick Strong</span>
+                                    <span class="contact-status bg-green"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <img class="contact-pic" src="assets/pages/media/users/avatar6.jpg">
+                                    <span class="contact-name">Anna Bold</span>
+                                    <span class="contact-status bg-yellow"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <img class="contact-pic" src="assets/pages/media/users/avatar7.jpg">
+                                    <span class="contact-name">Richard Nilson</span>
+                                    <span class="contact-status bg-green"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <div class="inbox-body">
+                        <div class="inbox-header">
+                            <h1 class="pull-left">Inbox</h1>
+                            <form class="form-inline pull-right" action="index.html">
+                                <div class="input-group input-medium">
+                                    <input type="text" class="form-control" placeholder="Password">
+                                    <span class="input-group-btn">
+                                                        <button type="submit" class="btn green">
+                                                            <i class="fa fa-search"></i>
+                                                        </button>
+                                                    </span>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="inbox-content"> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 </div>
 
@@ -180,5 +288,42 @@
 </svg>
 <a href="https://github.com/google/material-design-lite/blob/master/templates/dashboard/" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored mdl-color-text--white">Send</a>
 <script src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+<!-- BEGIN CORE PLUGINS -->
+<script src="assets/global/plugins/jquery.min.js" type="text/javascript"></script>
+<script src="assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="assets/global/plugins/js.cookie.min.js" type="text/javascript"></script>
+<script src="assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+<script src="assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
+<script src="assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
+<!-- END CORE PLUGINS -->
+<!-- BEGIN PAGE LEVEL PLUGINS -->
+<script src="assets/global/plugins/fancybox/source/jquery.fancybox.pack.js" type="text/javascript"></script>
+<script src="assets/global/plugins/bootstrap-wysihtml5/wysihtml5-0.3.0.js" type="text/javascript"></script>
+<script src="assets/global/plugins/bootstrap-wysihtml5/bootstrap-wysihtml5.js" type="text/javascript"></script>
+<script src="assets/global/plugins/jquery-file-upload/js/vendor/jquery.ui.widget.js" type="text/javascript"></script>
+<script src="assets/global/plugins/jquery-file-upload/js/vendor/tmpl.min.js" type="text/javascript"></script>
+<script src="assets/global/plugins/jquery-file-upload/js/vendor/load-image.min.js" type="text/javascript"></script>
+<script src="assets/global/plugins/jquery-file-upload/js/vendor/canvas-to-blob.min.js" type="text/javascript"></script>
+<script src="assets/global/plugins/jquery-file-upload/blueimp-gallery/jquery.blueimp-gallery.min.js" type="text/javascript"></script>
+<script src="assets/global/plugins/jquery-file-upload/js/jquery.iframe-transport.js" type="text/javascript"></script>
+<script src="assets/global/plugins/jquery-file-upload/js/jquery.fileupload.js" type="text/javascript"></script>
+<script src="assets/global/plugins/jquery-file-upload/js/jquery.fileupload-process.js" type="text/javascript"></script>
+<script src="assets/global/plugins/jquery-file-upload/js/jquery.fileupload-image.js" type="text/javascript"></script>
+<script src="assets/global/plugins/jquery-file-upload/js/jquery.fileupload-audio.js" type="text/javascript"></script>
+<script src="assets/global/plugins/jquery-file-upload/js/jquery.fileupload-video.js" type="text/javascript"></script>
+<script src="assets/global/plugins/jquery-file-upload/js/jquery.fileupload-validate.js" type="text/javascript"></script>
+<script src="assets/global/plugins/jquery-file-upload/js/jquery.fileupload-ui.js" type="text/javascript"></script>
+<!-- END PAGE LEVEL PLUGINS -->
+<!-- BEGIN THEME GLOBAL SCRIPTS -->
+<script src="assets/global/scripts/app.min.js" type="text/javascript"></script>
+<!-- END THEME GLOBAL SCRIPTS -->
+<!-- BEGIN PAGE LEVEL SCRIPTS -->
+<script src="assets/apps/scripts/inbox.min.js" type="text/javascript"></script>
+<!-- END PAGE LEVEL SCRIPTS -->
+<!-- BEGIN THEME LAYOUT SCRIPTS -->
+<script src="assets/layouts/layout/scripts/layout.min.js" type="text/javascript"></script>
+<script src="assets/layouts/layout/scripts/demo.min.js" type="text/javascript"></script>
+<script src="assets/layouts/global/scripts/quick-sidebar.min.js" type="text/javascript"></script>
+<script src="assets/layouts/global/scripts/quick-nav.min.js" type="text/javascript"></script>
 </body>
 </html>
