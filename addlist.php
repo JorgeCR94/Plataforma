@@ -6,6 +6,8 @@
  * Time: 07:45 AM
  */
 
+session_start();
+
 require_once("conect.php");
 include("ListasEspeciales.php");
 
@@ -16,6 +18,7 @@ class addlist extends conect
     public $description;
     public $start;
     public $end;
+    public $academico;
 
 
     function __construct()
@@ -24,20 +27,23 @@ class addlist extends conect
         $this->setConection();
     }
 
+
+
     public function putDataList(){
         $this->name = $_POST['name'];
         $this->description = $_POST['description'];
         $this->start = $_POST['start'];
         $this->end = $_POST['end'];
+        $this->academico = $_SESSION["Cuenta"];
         header('Content-Type: application/json');
         $us = new ListasEspeciales();
         $us->lista($this->name, $this->description,
-            $this->start, $this->end);
+            $this->start, $this->end,$this->academico);
 
 
 
-        $this->query = "INSERT INTO control.listas_especiales (Nombre,Descripcion,Fecha_Inicio,Fecha_Final) values 
-				('".$us->getNombre()."','".$us->getDescripcion()."','".$us->getFechaInicio()."','".$us->getFechaFin()."')";
+        $this->query = "INSERT INTO control.listas_especiales (Nombre,Descripcion,Fecha_Inicio,Fecha_Final,academico_id) values 
+				('".$us->getNombre()."','".$us->getDescripcion()."','".$us->getFechaInicio()."','".$us->getFechaFin()."','".$us->academico()."')";
 
 
         $this->insert = mysqli_query($this->_db,$this->query);

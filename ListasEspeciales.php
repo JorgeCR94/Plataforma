@@ -12,16 +12,24 @@ class ListasEspeciales
     public $descripcion;
     public $fecha_inicio;
     public $fecha_fin;
+    public $academico;
 
     function __construct(){
 
     }
 
-    public function lista($no, $des, $fei, $fef){
+    public function lista($no, $des, $fei, $fef, $aca){
         $this->nombre = $no;
         $this->descripcion = $des;
         $this->fecha_inicio = $fei;
         $this->fecha_fin = $fef;
+        $this->academico = $aca;
+    }
+    public function setAcademico($academico) {
+        $this->academico = $academico;
+    }
+    public function academico(){
+        return $this->academico;
     }
 
     public function setNombre($nombre) {

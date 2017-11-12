@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ed6b334-8421-44d3-a5eb-61d58fd3af0b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inbox.php" afterPath="$PROJECT_DIR$/inbox.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ListasEspeciales.php" afterPath="$PROJECT_DIR$/ListasEspeciales.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addlist.php" afterPath="$PROJECT_DIR$/addlist.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_inbox_view.html" afterPath="$PROJECT_DIR$/app_inbox_view.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,8 +18,8 @@
       <file leaf-file-name="listas.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/listas.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="60" column="110" lean-forward="true" selection-start-line="50" selection-start-column="3" selection-end-line="60" selection-end-column="110" />
+            <state relative-caret-position="289">
+              <caret line="91" column="102" lean-forward="false" selection-start-line="91" selection-start-column="82" selection-end-line="91" selection-end-column="102" />
               <folding>
                 <marker date="1510429125522" expanded="true" signature="20155:20165" ph="..." />
                 <marker date="1510429125522" expanded="true" signature="21547:21558" ph="..." />
@@ -36,11 +38,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="inbox.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="inbox.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/inbox.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="497">
-              <caret line="214" column="29" lean-forward="true" selection-start-line="214" selection-start-column="29" selection-end-line="214" selection-end-column="29" />
+            <state relative-caret-position="-180">
+              <caret line="185" column="28" lean-forward="false" selection-start-line="179" selection-start-column="32" selection-end-line="185" selection-end-column="28" />
               <folding>
                 <element signature="e#103#149#0#PHP" expanded="false" />
               </folding>
@@ -48,14 +50,76 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app_inbox.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../metronic_v4.7.1/theme/admin_1_material_design/app_inbox.html">
+      <file leaf-file-name="app_inbox_inbox.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app_inbox_inbox.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="2496" column="104" lean-forward="true" selection-start-line="2460" selection-start-column="7" selection-end-line="2496" selection-end-column="104" />
+            <state relative-caret-position="-5246">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app_inbox_reply.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app_inbox_reply.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="177">
+              <caret line="67" column="34" lean-forward="false" selection-start-line="67" selection-start-column="34" selection-end-line="67" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app_inbox_view.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app_inbox_view.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="296">
+              <caret line="86" column="22" lean-forward="false" selection-start-line="86" selection-start-column="22" selection-end-line="86" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app_inbox_compose.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app_inbox_compose.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="addlist.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/addlist.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
               <folding>
-                <element signature="n#div#2;n#div#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <marker date="1510458430673" expanded="true" signature="895:1029" ph="INSERT INTO control.listas_especiales... " />
+                <marker date="1510458430673" expanded="true" signature="895:1132" ph="INSERT INTO control.listas_especiales... " />
+                <marker date="1510458430673" expanded="true" signature="1455:1537" ph="SELECT * FRO... listas_especiles" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="academico.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/academico.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="6" lean-forward="true" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ListasEspeciales.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ListasEspeciales.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -76,8 +140,9 @@
       <find>modal</find>
       <find>range</find>
       <find>list</find>
-      <find>feeed1</find>
       <find>user inbox</find>
+      <find>feeed1</find>
+      <find>../</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -94,12 +159,13 @@
         <option value="$PROJECT_DIR$/controller2.php" />
         <option value="$PROJECT_DIR$/../metronic_v4.7.1/theme/admin_1_material_design/dashboard_2.html" />
         <option value="$PROJECT_DIR$/academico.php" />
-        <option value="$PROJECT_DIR$/ListasEspeciales.php" />
         <option value="$USER_HOME$/Documents/control.sql" />
-        <option value="$PROJECT_DIR$/addlist.php" />
         <option value="$PROJECT_DIR$/index2.php" />
         <option value="$PROJECT_DIR$/listas.php" />
         <option value="$PROJECT_DIR$/inbox.php" />
+        <option value="$PROJECT_DIR$/ListasEspeciales.php" />
+        <option value="$PROJECT_DIR$/addlist.php" />
+        <option value="$PROJECT_DIR$/app_inbox_view.html" />
       </list>
     </option>
   </component>
@@ -176,12 +242,12 @@
       <workItem from="1510259660045" duration="1708000" />
       <workItem from="1510283725568" duration="8760000" />
       <workItem from="1510362418652" duration="4307000" />
-      <workItem from="1510421789270" duration="7795000" />
+      <workItem from="1510421789270" duration="10499000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25262000" />
+    <option name="totallyTimeSpent" value="27966000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -191,6 +257,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -202,7 +269,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -236,45 +302,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../metronic_v4.7.1/theme/admin_1_material_design/components_date_time_pickers.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52122">
-          <caret line="3066" column="50" lean-forward="false" selection-start-line="3066" selection-start-column="0" selection-end-line="3067" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addlist.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="50" column="33" lean-forward="true" selection-start-line="50" selection-start-column="33" selection-end-line="50" selection-end-column="33" />
-          <folding>
-            <marker date="1510427590309" expanded="true" signature="787:908" ph="INSERT INTO control.listas_especiales... " />
-            <marker date="1510427590309" expanded="true" signature="787:988" ph="INSERT INTO control.listas_especiales... " />
-            <marker date="1510427590309" expanded="true" signature="1311:1393" ph="SELECT * FRO... listas_especiles" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/listas.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5559">
-          <caret line="332" column="31" lean-forward="false" selection-start-line="332" selection-start-column="31" selection-end-line="332" selection-end-column="31" />
-          <folding>
-            <marker date="1510429125522" expanded="true" signature="20155:20165" ph="..." />
-            <marker date="1510429125522" expanded="true" signature="21547:21558" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="65" lean-forward="false" selection-start-line="22" selection-start-column="57" selection-end-line="22" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config2.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="748">
@@ -306,9 +333,9 @@
         <state relative-caret-position="255">
           <caret line="20" column="2" lean-forward="true" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
           <folding>
-            <marker date="1510427590309" expanded="true" signature="787:908" ph="INSERT INTO control.listas_especiales... " />
-            <marker date="1510427590309" expanded="true" signature="787:988" ph="INSERT INTO control.listas_especiales... " />
-            <marker date="1510427590309" expanded="true" signature="1311:1393" ph="SELECT * FRO... listas_especiles" />
+            <marker date="1510458430673" expanded="true" signature="895:1029" ph="INSERT INTO control.listas_especiales... " />
+            <marker date="1510458430673" expanded="true" signature="895:1132" ph="INSERT INTO control.listas_especiales... " />
+            <marker date="1510458430673" expanded="true" signature="1455:1537" ph="SELECT * FRO... listas_especiles" />
           </folding>
         </state>
       </provider>
@@ -547,22 +574,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ListasEspeciales.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="28" column="5" lean-forward="false" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/academico.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="25" column="17" lean-forward="false" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/conect.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -605,43 +616,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addlist.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="72" column="63" lean-forward="false" selection-start-line="72" selection-start-column="63" selection-end-line="72" selection-end-column="63" />
-          <folding>
-            <marker date="1510427590309" expanded="true" signature="787:908" ph="INSERT INTO control.listas_especiales... " />
-            <marker date="1510427590309" expanded="true" signature="787:988" ph="INSERT INTO control.listas_especiales... " />
-            <marker date="1510427590309" expanded="true" signature="1311:1393" ph="SELECT * FRO... listas_especiles" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config2.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="14" column="27" lean-forward="true" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
           <folding>
             <marker date="1510260317614" expanded="true" signature="757:991" ph="INSERT INTO control.academico... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="113" column="48" lean-forward="true" selection-start-line="113" selection-start-column="48" selection-end-line="113" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/listas.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="60" column="110" lean-forward="true" selection-start-line="50" selection-start-column="3" selection-end-line="60" selection-end-column="110" />
-          <folding>
-            <marker date="1510429125522" expanded="true" signature="20155:20165" ph="..." />
-            <marker date="1510429125522" expanded="true" signature="21547:21558" ph="..." />
           </folding>
         </state>
       </provider>
@@ -656,13 +636,92 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/academico.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="6" lean-forward="true" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ListasEspeciales.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="113" column="48" lean-forward="true" selection-start-line="113" selection-start-column="48" selection-end-line="113" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/listas.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="91" column="102" lean-forward="false" selection-start-line="91" selection-start-column="82" selection-end-line="91" selection-end-column="102" />
+          <folding>
+            <marker date="1510429125522" expanded="true" signature="20155:20165" ph="..." />
+            <marker date="1510429125522" expanded="true" signature="21547:21558" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addlist.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+          <folding>
+            <marker date="1510458430673" expanded="true" signature="895:1029" ph="INSERT INTO control.listas_especiales... " />
+            <marker date="1510458430673" expanded="true" signature="895:1132" ph="INSERT INTO control.listas_especiales... " />
+            <marker date="1510458430673" expanded="true" signature="1455:1537" ph="SELECT * FRO... listas_especiles" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/inbox.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="497">
-          <caret line="214" column="29" lean-forward="true" selection-start-line="214" selection-start-column="29" selection-end-line="214" selection-end-column="29" />
+        <state relative-caret-position="-180">
+          <caret line="185" column="28" lean-forward="false" selection-start-line="179" selection-start-column="32" selection-end-line="185" selection-end-column="28" />
           <folding>
             <element signature="e#103#149#0#PHP" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_inbox_inbox.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5246">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_inbox_view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="86" column="22" lean-forward="false" selection-start-line="86" selection-start-column="22" selection-end-line="86" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_inbox_compose.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_inbox_reply.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="67" column="34" lean-forward="false" selection-start-line="67" selection-start-column="34" selection-end-line="67" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>
