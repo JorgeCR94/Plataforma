@@ -120,9 +120,8 @@ if (empty($_SESSION["Cuenta"])){
             </div>
         </header>
         <nav class="demo-navigation mdl-navigation mdl-color--blue-grey-800">
-            <a id="home"class="mdl-navigation__link" href="index2.php"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">home</i>Home</a>
-            <a id="in" class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">inbox</i>Inbox</a>
-            <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">report</i>Spam</a>
+                <a id="home"class="mdl-navigation__link" href="index2.php"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">home</i>Inicio</a>
+            <a id="in" class="mdl-navigation__link" href="inbox.php"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">inbox</i>Inbox</a>
             <a class="mdl-navigation__link" href="listas.php"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">forum</i>Listas especiales</a>
             <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">people</i>Materias</a>
             <div class="mdl-layout-spacer"></div>

@@ -76,7 +76,7 @@
     <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
       <header class="demo-header mdl-layout__header mdl-color--grey-100 mdl-color-text--grey-600">
         <div class="mdl-layout__header-row">
-          <span class="mdl-layout-title">Home</span>
+          <span class="mdl-layout-title">Inicio</span>
           <div class="mdl-layout-spacer" style="text-align: center;"><?php echo $_SESSION["Cuenta"]; ?></div>
           <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
             <label class="mdl-button mdl-js-button mdl-button--icon" for="search">
@@ -84,14 +84,14 @@
             </label>
             <div class="mdl-textfield__expandable-holder">
               <input class="mdl-textfield__input" type="text" id="search">
-              <label class="mdl-textfield__label" for="search">Enter your query...</label>
+              <label class="mdl-textfield__label" for="search">Ingresa tu busqueda..</label>
             </div>
           </div>
           <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="hdrbtn">
             <i class="material-icons">more_vert</i>
           </button>
           <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="hdrbtn">
-            <li class="mdl-menu__item"><a href="destroy.php">LogOut</a></li>
+            <li class="mdl-menu__item"><a href="destroy.php">Salir</a></li>
           </ul>
         </div>
       </header>
@@ -108,9 +108,8 @@
           </div>
         </header>
         <nav class="demo-navigation mdl-navigation mdl-color--blue-grey-800">
-          <a id="home"class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">home</i>Home</a>
-          <a id="in" class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">inbox</i>Inbox</a>
-          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">report</i>Spam</a>
+          <a id="home"class="mdl-navigation__link" href="index2.php"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">home</i>Inicio</a>
+          <a id="in" class="mdl-navigation__link" href="inbox.php"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">inbox</i>Inbox</a>
           <a class="mdl-navigation__link" href="listas.php"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">forum</i>Listas especiales</a>
           <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">people</i>Materias</a>
           <div class="mdl-layout-spacer"></div>
@@ -119,155 +118,26 @@
       </div>
       <main class="mdl-layout__content mdl-color--grey-100">
 
-  <div id="inbox">
-    <div class="mdl-grid demo-content">
-          <div class="demo-graphs mdl-shadow--2dp mdl-color--white mdl-cell mdl-cell--8-col">
-           <div class="container">
-        <div class="mail-box">
-                  
-                  <aside class="lg-side">
-                      <div class="inbox-head">
-                          <h3>Inbox</h3>
-                          <form action="#" class="pull-right position">
-                              <div class="input-append">
-                                  <input type="text" class="sr-input" placeholder="Search Mail">
-                                  <button class="btn sr-btn" type="button"><i class="fa fa-search"></i></button>
+
+
+
+
+                <div id="noticias">
+                          <div class="demo-cards mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-grid mdl-grid--no-spacing">
+                            <div class="demo-updates mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--12-col-desktop">
+                              <div class="mdl-card__title mdl-card--expand mdl-color--teal-300">
+                                <h2 class="mdl-card__title-text">Noticias</h2>
                               </div>
-                          </form>
-                      </div>
-                      <div class="inbox-body">
-                         
-                          <table class="table table-inbox table-hover">
-                            <tbody>
-                              <tr class="unread">
-                                  <td class="inbox-small-cells">
-                                      <input type="checkbox" class="mail-checkbox">
-                                  </td>
-                                  <td class="inbox-small-cells"><i class="fa fa-star"></i></td>
-                                  <td class="view-message  dont-show">PHPClass</td>
-                                  <td class="view-message ">Added a new class: Login Class Fast Site</td>
-                                  <td class="view-message  inbox-small-cells"><i class="fa fa-paperclip"></i></td>
-                                  <td class="view-message  text-right">9:27 AM</td>
-                              </tr>
-                              <tr class="unread">
-                                  <td class="inbox-small-cells">
-                                      <input type="checkbox" class="mail-checkbox">
-                                  </td>
-                                  <td class="inbox-small-cells"><i class="fa fa-star"></i></td>
-                                  <td class="view-message dont-show">Google Webmaster </td>
-                                  <td class="view-message">Improve the search presence of WebSite</td>
-                                  <td class="view-message inbox-small-cells"></td>
-                                  <td class="view-message text-right">March 15</td>
-                              </tr>
-                              <tr class="">
-                                  <td class="inbox-small-cells">
-                                      <input type="checkbox" class="mail-checkbox">
-                                  </td>
-                                  <td class="inbox-small-cells"><i class="fa fa-star"></i></td>
-                                  <td class="view-message dont-show">JW Player</td>
-                                  <td class="view-message">Last Chance: Upgrade to Pro for </td>
-                                  <td class="view-message inbox-small-cells"></td>
-                                  <td class="view-message text-right">March 15</td>
-                              </tr>
-                              <tr class="">
-                                  <td class="inbox-small-cells">
-                                      <input type="checkbox" class="mail-checkbox">
-                                  </td>
-                                  <td class="inbox-small-cells"><i class="fa fa-star"></i></td>
-                                  <td class="view-message dont-show">Tim Reid, S P N</td>
-                                  <td class="view-message">Boost Your Website Traffic</td>
-                                  <td class="view-message inbox-small-cells"></td>
-                                  <td class="view-message text-right">April 01</td>
-                              </tr>
-                              <tr class="">
-                                  <td class="inbox-small-cells">
-                                      <input type="checkbox" class="mail-checkbox">
-                                  </td>
-                                  <td class="inbox-small-cells"><i class="fa fa-star inbox-started"></i></td>
-                                  <td class="view-message dont-show">Freelancer.com <span class="label label-danger pull-right">urgent</span></td>
-                                  <td class="view-message">Stop wasting your visitors </td>
-                                  <td class="view-message inbox-small-cells"></td>
-                                  <td class="view-message text-right">May 23</td>
-                              </tr>
-                              <tr class="">
-                                  <td class="inbox-small-cells">
-                                      <input type="checkbox" class="mail-checkbox">
-                                  </td>
-                                  <td class="inbox-small-cells"><i class="fa fa-star inbox-started"></i></td>
-                                  <td class="view-message dont-show">WOW Slider </td>
-                                  <td class="view-message">New WOW Slider v7.8 - 67% off</td>
-                                  <td class="view-message inbox-small-cells"><i class="fa fa-paperclip"></i></td>
-                                  <td class="view-message text-right">March 14</td>
-                              </tr>
-                              
-                              <tr class="">
-                                  <td class="inbox-small-cells">
-                                      <input type="checkbox" class="mail-checkbox">
-                                  </td>
-                                  <td class="inbox-small-cells"><i class="fa fa-star"></i></td>
-                                  <td class="view-message dont-show">Terri Rexer, S P N</td>
-                                  <td class="view-message view-message">Forget Google AdWords: Un-Limited Clicks fo</td>
-                                  <td class="view-message inbox-small-cells"><i class="fa fa-paperclip"></i></td>
-                                  <td class="view-message text-right">April 14</td>
-                              </tr>
-                              <tr class="">
-                                  <td class="inbox-small-cells">
-                                      <input type="checkbox" class="mail-checkbox">
-                                  </td>
-                                  <td class="inbox-small-cells"><i class="fa fa-star"></i></td>
-                                  <td class="view-message dont-show">Bertina </td>
-                                  <td class="view-message">IMPORTANT: Don't lose your domains!</td>
-                                  <td class="view-message inbox-small-cells"><i class="fa fa-paperclip"></i></td>
-                                  <td class="view-message text-right">June 16</td>
-                              </tr>
-                              <tr class="">
-                                  <td class="inbox-small-cells">
-                                      <input type="checkbox" class="mail-checkbox">
-                                  </td>
-                                  <td class="inbox-small-cells"><i class="fa fa-star inbox-started"></i></td>
-                                  <td class="view-message dont-show">Laura Gaffin, S P N </td>
-                                  <td class="view-message">Your Website On Google (Higher Rankings Are Better)</td>
-                                  <td class="view-message inbox-small-cells"></td>
-                                  <td class="view-message text-right">August 10</td>
-                              </tr>
-                              <tr class="">
-                                  <td class="inbox-small-cells">
-                                      <input type="checkbox" class="mail-checkbox">
-                                  </td>
-                                  <td class="inbox-small-cells"><i class="fa fa-star"></i></td>
-                                  <td class="view-message dont-show">Facebook</td>
-                                  <td class="view-message view-message">Alireza Zare Login faild</td>
-                                  <td class="view-message inbox-small-cells"><i class="fa fa-paperclip"></i></td>
-                                  <td class="view-message text-right">feb 14</td>
-                              </tr>
-                          </tbody>
-                          </table>
-                      </div>
-                  </aside>
-              </div>
-        </div>
-      </div> 
-  </div>
-</div>
-
-
-
-<div id="noticias">
-          <div class="demo-cards mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-grid mdl-grid--no-spacing">
-            <div class="demo-updates mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--12-col-desktop">
-              <div class="mdl-card__title mdl-card--expand mdl-color--teal-300">
-                <h2 class="mdl-card__title-text">Noticias</h2>
-              </div>
-              <div class="mdl-card__supporting-text mdl-color-text--grey-600">
-                Se publicaran las noticias de ultima hora.
-              </div>
-              <div class="mdl-card__actions mdl-card--border">
-                <a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect">Read More</a>
-              </div>
-            </div>
-            <div class="demo-separator mdl-cell--1-col"></div>
-          </div>
-</div>
+                              <div class="mdl-card__supporting-text mdl-color-text--grey-600">
+                                Se publicaran las noticias de ultima hora.
+                              </div>
+                              <div class="mdl-card__actions mdl-card--border">
+                                <a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect">Read More</a>
+                              </div>
+                            </div>
+                            <div class="demo-separator mdl-cell--1-col"></div>
+                          </div>
+                </div>
           </main>
     </div>
       
