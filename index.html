@@ -1,11 +1,58 @@
 <!DOCTYPE html>
 <html class='no-js' lang='es'>
   <head>
-    <meta charset='utf-8'>
+  	<meta charset='utf-8'>
     <title>UAEH</title>
     <link href='src/main.css' rel='stylesheet'>
-     <link href='https://cdn.jsdelivr.net/flexboxgrid/6.3.0/flexboxgrid.min.css' rel='stylesheet'>
+    <link href='https://cdn.jsdelivr.net/flexboxgrid/6.3.0/flexboxgrid.min.css' rel='stylesheet'>
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#academico").hide();
+			$("#alumno").hide();
+		    $("#aca").click(function(){
+		        $("#academico").show();
+		        $("#alumno").hide();
+		    });
+		});
+		$(document).ready(function(){
+			$("#academico").hide();
+			$("#alumno").hide();
+		    $("#alum").click(function(){
+		        $("#alumno").show();
+		        $("#academico").hide();
+		    });
+		});
+	</script>
+	<style type="text/css">
+		.button {
+		    background-color: #CF4A30; 
+		    border: none;
+		    color: white;
+		    padding: 16px 32px;
+		    text-align: center;
+		    text-decoration: none;
+		    display: inline-block;
+		    font-size: 16px;
+		    margin: 4px 2px;
+		    -webkit-transition-duration: 0.4s; 
+		    transition-duration: 0.4s;
+		    cursor: pointer;
+		}
+		.button_a {
+		    background-color: white; 
+		    color: black; 
+		    border: 2px solid #CF4A30;
+		}
 
+		.button_a:hover {
+		    background-color: #CF4A30;
+		    color: white;
+		}
+	</style>
+  </head>
+    
+	<body>
 	    <div class="row center-xs">
 	    	<div class="col-xs-6">
 		        <div class="box">
@@ -14,15 +61,37 @@
 		    </div>
 		</div>
 
-	    <div class="login-page">
-		  <div class="form">
-		    <form class="login-form" action="controller2.php" method="post">
-		      <input type="text" name="usuario" placeholder="Correo"/>
-		      <input type="password" name="password" placeholder="contraseña"/>
-				<button type="submit" value="Submit">Entrar</button>
-		      <p class="message">no registrado? <a href="registro.php">Crear cuenta</a></p>
-		    </form>
-		  </div>
+		<!-- Opción de entrar como académico-->
+		<button id="aca" class="button button_a">Académico</button>
+		<button id="alum" class="button button_a">Alumno</button>
+
+		<div id="academico">
+			<div class="login-page">
+			  <div class="form">
+			    <form class="login-form" action="controller_academico.php" method="post">
+			      <input type="text" name="usuario" placeholder="Correo"/>
+			      <input type="password" name="password" placeholder="contraseña"/>
+					<button type="submit" value="Submit">Entrar</button>
+			      <p class="message">Académico no registrado? <a href="registro.php">Registrar</a></p>
+			    </form>
+			  </div>
+			</div>
 		</div>
+
+		<!-- Ingresar credenciales de un alumno-->
+		<div id="alumno">
+			<div class="login-page">
+			  <div class="form">
+			    <form class="login-form" action="controller_alumno.php" method="post">
+			      <input type="text" name="usuario" placeholder="Correo"/>
+			      <input type="password" name="password" placeholder="contraseña"/>
+					<button type="submit" value="Submit">Entrar</button>
+			      <p class="message">Alumno no registrado? <a href="registro.php">Registrar</a></p>
+			    </form>
+			  </div>
+			</div>
+		</div>
+	    
+	</body>
 
 </html>
