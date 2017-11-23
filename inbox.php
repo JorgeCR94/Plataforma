@@ -239,6 +239,52 @@
 </div>
 
 </div>
+<div class="modal fade" id="modalList" tabindex="-1" role="basic" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                <h4 class="modal-title">Enviar mensaje</h4>
+            </div>
+            <div class="modal-body">
+                <div class="portlet-body form">
+                    <form role="form">
+                        <div class="form-body">
+                            <div class="form-group">
+                                <label>Nombre de la lista:</label>
+                                <input type="text" class="form-control" id="name" placeholder="Nombre">
+                            </div>
+                            <div class="form-group">
+                                <label>Asunto:</label>
+                                <input type="text" class="form-control" id="subject" placeholder="Asunto">
+                            </div>
+                            <div class="form-group">
+                                <label>Contenido:</label>
+                                <input type="text" class="form-control" id="message_content" placeholder="Contenido">
+                            </div>
+                            <div class="input-group date-picker input-daterange" data-date-format="yyyy-mm-dd" data-date-start-date="+1d">
+                                <div class="row">
+                                    <div class="form-group form-md-line-input has-info">
+                                        <div class="col-md-6">
+                                            <input type="text" class="form-control input-lg" id="from" name="from" required>
+                                            <label for="from">Fecha</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn dark btn-outline" data-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn green" id="add_list">Enviar</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" style="position: fixed; left: -1000px; height: -1000px;">
     <defs>
         <mask id="piemask" maskContentUnits="objectBoundingBox">
@@ -286,7 +332,7 @@
         </g>
     </defs>
 </svg>
-<a href="https://github.com/google/material-design-lite/blob/master/templates/dashboard/" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored mdl-color-text--white">Send</a>
+<button id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored mdl-color-text--white" target="_blank">Send</button>
 <script src="https://code.getmdl.io/1.1.3/material.min.js"></script>
 <!-- BEGIN CORE PLUGINS -->
 <script src="assets/global/plugins/jquery.min.js" type="text/javascript"></script>
@@ -325,5 +371,37 @@
 <script src="assets/layouts/layout/scripts/demo.min.js" type="text/javascript"></script>
 <script src="assets/layouts/global/scripts/quick-sidebar.min.js" type="text/javascript"></script>
 <script src="assets/layouts/global/scripts/quick-nav.min.js" type="text/javascript"></script>
+<script>
+    $('#view-source').click(function(){
+        $('#modalList').modal('show');
+    });
+        $('#add_list').click(function () {
+        var nombre = $('#name').val();
+        var asunto = $('#subject').val();
+        var descripcion =$('#message_content').val();
+        var fecha = $('#from').val();
+        $.ajax({
+            url: 'message.php',
+            data: {id: 0, name:nombre, subject: asunto, message_content: descripcion, date: fecha},
+            type: 'POST',
+            dataType: 'json',
+            success: function (data) {
+                console.log(data);
+               $("##modalList").modal('hide');
+                swal({
+                    title: "Correcto",
+                    text: "Se agrego una lista correctamente",
+                    type:"success",
+                    showConfirmButton: true
+                },function(){
+                    location.reload();
+                })
+            },
+            error: function (data) {
+                console.log(data);
+            }
+        });
+    });
+</script>
 </body>
 </html>
