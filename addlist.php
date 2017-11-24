@@ -40,12 +40,8 @@ class addlist extends conect
         $us->lista($this->name, $this->description,
             $this->start, $this->end,$this->academico);
 
-
-
         $this->query = "INSERT INTO control.listas_especiales (Nombre,Descripcion,Fecha_Inicio,Fecha_Final,academico_id) values 
 				('".$us->getNombre()."','".$us->getDescripcion()."','".$us->getFechaInicio()."','".$us->getFechaFin()."','".$us->academico()."')";
-
-
         $this->insert = mysqli_query($this->_db,$this->query);
         if($this->query == false)
             echo " Errror al insertar ".mysqli_error($this->query);
